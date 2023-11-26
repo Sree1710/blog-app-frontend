@@ -1,6 +1,7 @@
 import axios from 'axios'
 import React, { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
+import LoginRegNav from './LoginRegNav'
 
 const UserLogin = () => {
     const [inputField,setInputField]=useState(
@@ -31,6 +32,7 @@ const UserLogin = () => {
     }
   return (
     <div>
+        <LoginRegNav/>
         <div className="container">
             <div className="row">
                 <div className="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
