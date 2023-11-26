@@ -32,9 +32,9 @@ const ViewMyPost = () => {
                             </div>
                             {postData.map(
                                 (value, index) => {
-                                    return <div className="col col-12 col-sm-6 col-md-3 col-lg-3 col-xl-3 col-xxl-3">
+                                    return <div className="col col-12 col-sm-6 col-md-3 col-lg-3 col-xl-3 col-xxl-3 d-flex align-items-stretch">
                                         <div className="card">
-                                            <img src={value.postImg} className="card-img-top" alt="..." />
+                                            <img height="300px" src={value.postImg} className="card-img-top" alt="..." />
                                             <div className="card-body">
                                                 <h5 className="card-title">{value.postTitle}</h5>
                                                 <p className="card-text">{value.postDesc}</p>

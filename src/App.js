@@ -4,6 +4,7 @@ import AddPost from './Components/AddPost';
 import UserLogin from './Components/UserLogin';
 import UserReg from './Components/UserReg';
 import ViewMyPost from './Components/ViewMyPost';
+import ViewAllPost from './Components/ViewAllPost';
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       <Route path='/reg' exact element={<UserReg/>} />
       <Route path='/addp' exact element={<AddPost/>} />
       <Route path='/viewmp' exact element={<ViewMyPost/>} />
+      <Route path='/viewap' exact element={<ViewAllPost/>} />
     </Routes>
     </BrowserRouter>
   );
