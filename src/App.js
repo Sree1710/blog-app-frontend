@@ -10,7 +10,7 @@ function App() {
     <BrowserRouter>
     <Routes>
       <Route path='/' exact element={<UserLogin/>} />
-      <Route path='/userreg' exact element={<UserReg/>} />
+      <Route path='/reg' exact element={<UserReg/>} />
       <Route path='/addp' exact element={<AddPost/>} />
       <Route path='/viewmp' exact element={<ViewMyPost/>} />
     </Routes>
