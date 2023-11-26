@@ -1,5 +1,6 @@
 import axios from 'axios'
 import React, { useState } from 'react'
+import { useNavigate } from 'react-router-dom'
 
 const UserLogin = () => {
     const [inputField,setInputField]=useState(
@@ -7,6 +8,7 @@ const UserLogin = () => {
     )
 
     const apiLink="http://localhost:3001/login"
+    const navigate=useNavigate()
 
     const inputHandler=(event)=>{
         setInputField({...inputField,[event.target.name]:event.target.value})
@@ -20,7 +22,7 @@ const UserLogin = () => {
                     let token=Response.data.token
                     sessionStorage.setItem("userid",userid)
                     sessionStorage.setItem("token",token)
-                    alert("Logged In Successfully !!!")
+                    navigate('/addp')
                 } else {
                     alert(Response.data.status)
                 }
